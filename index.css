@@ -18,6 +18,9 @@ body{
     background-color: rgb(33, 32, 36) !important;
     
 }
+.anotherdetailbox{
+    display: none;
+}
 .navbar{
     height: 60px;
     width: 100%;
@@ -50,9 +53,13 @@ border: 5px solid rgb(73, 73, 73);
  border-radius: 15px;
 
 }
+.show{
+    display: none;
+}
 
 
 .box1{
+    position: relative;
     height: 600px;
     width: 20%;
     /* background-color:rgb(43, 31, 31) ; */
@@ -444,6 +451,8 @@ margin-left: 50px;
     .box2{
         width: 780px;
     }
+  
+
 }
 @media screen and (min-width:820px) and (max-width:1100px) {
     .box1{
@@ -453,10 +462,26 @@ margin-left: 50px;
 
 
     }
+    .anotherdetailbox{
+        display: none;
+    }
+    .show{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+
+    }
     .box2{
         width: 95%;
         margin-top: 20px;
-
+        
+        height: auto;
+        overflow: hidden;
+    }
+    .projects{
+        overflow-y: hidden;
+        height: fit-content;
     }
     .boc12{
         display: block;
@@ -472,12 +497,37 @@ margin-left: 50px;
         width: 95%;
         padding: 7px;
         height: auto;
-
+        box-shadow: 0px 0px 2px 2px rgb(73, 70, 70);
+    }
+    .anotherdetailbox{
+        display: none;
+    }
+    .show{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
 
     }
+    .projectbox{
+        
+        margin-top: 10px;
+        border-radius: 20px;
+    }
+    .radius{
+        border-radius: 30px !important;
+    }
+    .projects{
+        overflow-y: hidden;
+        height: fit-content;
+    }
+    
     .box2{
         width: 95%;
         margin-top: 20px;
+        height: auto;
+        overflow: hidden;
+        box-shadow: 0px 0px 2px 2px rgb(73, 70, 70);
 
     }
     .boc12{
@@ -495,6 +545,25 @@ margin-left: 50px;
     margin-right: 0;
 
   }
+  .anotherdetailbox{
+    display: none;
+}
+  .show{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+
+}
+  .projectbox{
+    margin-top: 10px;
+    border-radius: 3px;
+    width: 90%;
+}
+  .projects{
+    overflow-y: hidden;
+    height: fit-content;
+}
   .navbar ul{
     padding-left: 0;
     margin: 0;
@@ -506,4 +575,60 @@ margin-left: 50px;
   .containerfluid{
     padding: 5px;
   }
+}
+@media screen and (min-width:345px) and (max-width:400px) {
+    .navbar{
+        text-align: center !important;
+        font-size: 1px;
+    }
+    .anotherdetailbox{
+        display: none;
+    }
+    .navbar ul{
+        padding-left: 0;
+        margin: 0;
+        float: none;
+    }
+    .projects{
+        overflow-y: hidden;
+        height: fit-content;
+    }
+    .projectbox{
+        margin-top: 10px;
+        border-radius: 3px;
+        width: 90%;
+    }
+    .box1{
+        width: 98%;
+        padding: 7px;
+        height: auto;
+        box-shadow: 0px 0px 2px 2px rgb(73, 70, 70);
+
+    }
+    .show{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+
+    }
+    .box2{
+        width: 98%;
+        margin-top: 20px;
+        overflow: hidden;
+        height: auto;
+        box-shadow: 0px 0px 2px 2px rgb(73, 70, 70);
+
+
+    }
+    .boc12{
+        display: block;
+        margin-left: 1%;
+    }
+    .show{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
 }

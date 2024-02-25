@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: rgb(53, 45, 45) !important;
+    background-color: rgb(33, 32, 36) !important;
     
 }
 .navbar{
@@ -34,6 +34,15 @@ body{
 
 li:hover{
     background-color: rgb(73, 72, 73);
+    transition: all ease 0.4s;
+    background: rgb(82, 80, 84) ;
+ color: rgb(250, 0, 0);
+ font-size: var(--fs-6);
+ font-weight: var(--fw-220);
+ text-transform: capitalize;
+
+border: 5px solid rgb(73, 73, 73);
+ border-radius: 20px;
 
 }
 
@@ -41,7 +50,8 @@ li:hover{
 .box1{
     height: 600px;
     width: 20%;
-    background-color:rgb(43, 31, 31) ;
+    /* background-color:rgb(43, 31, 31) ; */
+    background-image: linear-gradient(to top,hsl(240, 3%, 13%)3%,hsl(0, 0%, 8%)97%) ;
     margin-right: 20px;
     border-radius: 15px;
     /* border: 2px solid rgb(9, 5, 98); */
@@ -338,16 +348,16 @@ margin-left: 50px;
     
     background-color: rgb(56, 50, 50);
 }
-.projectbox:hover{
-    /* transition: all ease 3s; */
-     background: var(--eerie-black-2);
-  color: var(--light-gray);
+.card-img-top:hover{
+    transition: all ease 0.5s;
+     background: rgb(82, 80, 84) ;
+  color: rgb(250, 0, 0);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   text-transform: capitalize;
   width: 100%;
   padding: 8px 10px;
-  border-radius: 8px;
+  border-radius: 30px;
 }
 
 
